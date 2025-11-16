@@ -1,0 +1,5 @@
+# Install Required Libraries (Python 3.14 Compatible)
+pip install google-generativeai python-dotenv 
+pip install SpeechRecognition sounddevice 
+pip install numpy pyttsx3
+pip install gTTS playsound==1.2.2
