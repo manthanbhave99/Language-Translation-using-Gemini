@@ -16,10 +16,10 @@ Build a local desktop app (Python 3.14) that:
 
 How It Works
 
-User selects target language
-Enters text OR clicks mic button for voice input
-App sends text to Gemini translation model
-Translated output appears in the result box
+User selects target language ->
+Enters text OR clicks mic button for voice input ->
+App sends text to Gemini translation model ->
+Translated output appears in the result box ->
 
 ---
 
@@ -45,11 +45,11 @@ pip install google-generativeai
 
 Technologies Used
 
-Python 3.14
-Tkinter (GUI)
-Gemini API
-SpeechRecognition
-dotenv
+1. Python 3.14
+2. Tkinter (GUI)
+3. Gemini API
+4. SpeechRecognition
+5. dotenv
 
 # 4. Configure the Gemini key
 
