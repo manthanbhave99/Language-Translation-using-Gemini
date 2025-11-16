@@ -8,10 +8,18 @@ A concise, step-by-step summary of the complete project: a simple Tkinter GUI ap
 
 Build a local desktop app (Python 3.14) that:
 
-* Lets the user paste/type text
-* Lets the user pick one of 5 languages from a dropdown
+* Lets the user speak/type text
+* Lets the user pick one of the given languages from a dropdown
 * Sends a prompt to Gemini and returns **short, direct** translated text
 * Shows the translated text in the GUI
+* Read aloud the translated text.
+
+How It Works
+
+User selects target language
+Enters text OR clicks mic button for voice input
+App sends text to Gemini translation model
+Translated output appears in the result box
 
 ---
 
@@ -19,7 +27,7 @@ Build a local desktop app (Python 3.14) that:
 
 1. Python 3.14 installed and on your PATH.
 2. A Gemini API key (from Google AI Studio / Google Cloud — the key you used, e.g. starts with `AIza...` or the proper API key format you have).
-3. Internet connection for API calls.
+3. Internet connection for API calls, Google Text-to-speech.
 
 ---
 
@@ -34,6 +42,14 @@ pip install google-generativeai
 (Tkinter is built into most Python installers; on Linux install `python3-tk` if missing.)
 
 ---
+
+Technologies Used
+
+Python 3.14
+Tkinter (GUI)
+Gemini API
+SpeechRecognition
+dotenv
 
 # 4. Configure the Gemini key
 
@@ -108,3 +124,11 @@ Translate the following text into {target_language}. Give only the translated te
 1. Save the Python script with your key configured.
 2. Open a Command Prompt in the script folder.
 3. Run:
+
+📌 Notes
+
+Ensure microphone permissions are enabled for voice input
+
+Internet connection is required for API calls
+
+The translation logic supports all major languages
